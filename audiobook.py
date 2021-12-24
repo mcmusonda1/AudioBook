@@ -1,7 +1,7 @@
 import pyttsx3
 import PyPDF2
 
-# Enter your pdf path
+# Enter your pdf path eg. book.pdf
 book = open(input('Enter the name of the book you want to be read: \n'), 'rb')
 Reader = PyPDF2.PdfFileReader(book)
 
