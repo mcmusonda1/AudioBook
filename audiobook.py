@@ -8,9 +8,10 @@ Reader = PyPDF2.PdfFileReader(book)
 print("Am reading from the book you chose, \n relax and enjoy")
 Read = pyttsx3.init()
 
-# Input the range of where to start reading from and end on
+#You can insert the number of pages you want in the for loop, the first parameter is the starting point then the second parameter is the ending point
 
-for num in range(input('Please enter the number of the page I should start reading from: \n'), input('Please enter the page number of were I should end on reading: \n')):
+
+for num in range(10, 12):
     page = Reader.getPage(num)
     text = page.extractText()
     Read.say(text)
